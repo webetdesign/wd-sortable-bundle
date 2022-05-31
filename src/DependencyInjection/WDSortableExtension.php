@@ -29,15 +29,5 @@ class WDSortableExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('wd.sortable.behavior.position.field', $config['position_field']);
-        $container->setParameter('wd.sortable.behavior.sortable_groups', $config['sortable_groups']);
-
-        $positionHandler = sprintf(
-            'wd_sortable_behavior.position.%s',
-            $config['db_driver']
-        );
-
-        $container->setAlias('wd_sortable_behavior.position', new Alias($positionHandler));
-        $container->getAlias('wd_sortable_behavior.position')->setPublic(true);
     }
 }
