@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Pix\SortableBehaviorBundle\DependencyInjection;
+namespace WebEtDesign\SortableBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -21,7 +21,7 @@ use Symfony\Component\DependencyInjection\Alias;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class PixSortableBehaviorExtension extends Extension
+class WDSortableExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -31,18 +31,15 @@ class PixSortableBehaviorExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.yml');
-
-        $container->setParameter('pix.sortable.behavior.position.field', $config['position_field']);
-        $container->setParameter('pix.sortable.behavior.sortable_groups', $config['sortable_groups']);
+        $container->setParameter('wd.sortable.behavior.position.field', $config['position_field']);
+        $container->setParameter('wd.sortable.behavior.sortable_groups', $config['sortable_groups']);
 
         $positionHandler = sprintf(
-            'pix_sortable_behavior.position.%s',
+            'wd_sortable_behavior.position.%s',
             $config['db_driver']
         );
 
-        $container->setAlias('pix_sortable_behavior.position', new Alias($positionHandler));
-        $container->getAlias('pix_sortable_behavior.position')->setPublic(true);
+        $container->setAlias('wd_sortable_behavior.position', new Alias($positionHandler));
+        $container->getAlias('wd_sortable_behavior.position')->setPublic(true);
     }
 }
