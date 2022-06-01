@@ -27,7 +27,7 @@ class SortableAdminController extends CRUDController
 
         $this->admin->checkAccess('edit', $existingObject);
 
-        $existingObject->setPosition($position);
+        $existingObject->setPosition((int) $position);
 
         $existingObject = $this->admin->update($existingObject);
 
