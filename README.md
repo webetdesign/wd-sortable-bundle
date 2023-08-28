@@ -3,8 +3,8 @@
 Fork of PixSortableBeavior
 
 ## Requirement
-- PHP ^8
-- symfony ^5.4
+- PHP ^8.2
+- symfony ^6.2
 
 ## Installation
 Add the repo to your composer.json
