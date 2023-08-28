@@ -8,17 +8,12 @@
         "sonata"
     ],
     "require": {
-        "php": ">=5.3.0",
-        "symfony/framework-bundle": ">=2.1",
-        "symfony/form": ">=2.1"
-    },
-    "require": {
-        "php": "^7.4|^8.0",
-        "symfony/framework-bundle": "^5.4",
-        "symfony/form": "^5.4"
+        "php": "^8.2",
+        "symfony/framework-bundle": "^6.2",
+        "symfony/form": "^6.2"
     },
     "require-dev": {
-        "gedmo/doctrine-extensions": ">=2.2"
+        "gedmo/doctrine-extensions": "^3.12"
     },
     "autoload": {
         "psr-4": {
