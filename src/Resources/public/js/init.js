@@ -71,5 +71,9 @@ var DraggableTable = function(element) {
                 }
             });
         }
-    }).disableSelection();
+    });
+
+    if (typeof element.disableSelection === 'function') {
+        element.find('tbody').disableSelection();
+    }
 };
