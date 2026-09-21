@@ -7,17 +7,31 @@
         "admin",
         "sonata"
     ],
+    "homepage": "https://github.com/pix-digital/pixSortableBehaviorBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Ricci",
+            "email": "nr@pix-digital.com"
+        }
+    ],
     "require": {
-        "php": "^8.2",
-        "symfony/framework-bundle": "^6.2",
-        "symfony/form": "^6.2"
+        "php": ">=7.2.5",
+        "symfony/framework-bundle": "^5.4",
+        "symfony/form": "^5.4"
     },
     "require-dev": {
         "gedmo/doctrine-extensions": "^3.12"
     },
     "autoload": {
-        "psr-4": {
-            "WebEtDesign\\SortableBundle\\": "src"
+        "psr-0": {
+            "Pix\\SortableBehaviorBundle": ""
+        }
+    },
+    "target-dir": "Pix/SortableBehaviorBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.3-dev"
         }
     }
 }
