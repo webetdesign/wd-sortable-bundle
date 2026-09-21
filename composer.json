@@ -1,5 +1,5 @@
 {
-    "name": "pixassociates/sortable-behavior-bundle",
+    "name": "webetdesign/wd-sortable-bundle",
     "type": "symfony-bundle",
     "description": "Provides a way to sort your admin listing",
     "keywords": [
@@ -21,11 +21,7 @@
         "symfony/form": "^5.4"
     },
     "require-dev": {
-        "gedmo/doctrine-extensions": ">=2.2"
-    },
-    "suggest": {
-        "sonata-project/admin-bundle": "Can be easily integrated with Sonata Admin bundle",
-        "stof/doctrine-extensions-bundle": "1.1.*@dev"
+        "gedmo/doctrine-extensions": "^3.12"
     },
     "autoload": {
         "psr-0": {

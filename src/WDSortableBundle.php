@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Pix\SortableBehaviorBundle;
+namespace WebEtDesign\SortableBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class PixSortableBehaviorBundle extends Bundle
+class WDSortableBundle extends Bundle
 {
 }
