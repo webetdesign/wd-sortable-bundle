@@ -9,8 +9,8 @@
     ],
     "require": {
         "php": "^8.2",
-        "symfony/framework-bundle": "^6.2 || ^7.0",
-        "symfony/form": "^6.2 || ^7.0"
+        "symfony/framework-bundle": "^7.4",
+        "symfony/form": "^7.4"
     },
     "require-dev": {
         "gedmo/doctrine-extensions": "^3.12"
